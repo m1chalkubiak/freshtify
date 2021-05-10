@@ -1,0 +1,16 @@
+{
+  "name": "freshtify-frontend",
+  "version": "0.1.0",
+  "author": "Michał Kubiak <michal.kubiak@my.com>",
+  "license": "MIT",
+  "engines": {
+    "node": ">=14.x.x"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/m1chalkubiak/freshtify"
+  },
+  "bugs": {
+    "url": "https://github.com/m1chalkubiak/freshtify/issues"
+  }
+}
