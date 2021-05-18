@@ -1,8 +1,8 @@
 import React from 'react';
-import { Route, Switch, Redirect, useRouteMatch } from 'react-router-dom';
+import { Route, Switch, useRouteMatch } from 'react-router-dom';
 import { IntlProvider } from 'react-intl';
 
-import { DEFAULT_LOCALE, appLocales, translationMessages } from '../i18n';
+import { DEFAULT_LOCALE, translationMessages } from '../i18n';
 import { asyncComponent } from '../shared/utils/asyncComponent';
 import { AppComponent as App } from './app.component';
 import { ROUTES } from './app.constants';
@@ -33,10 +33,6 @@ export default () => {
   return (
     <Switch>
       <Route exact path="/">
-        <Redirect to={DEFAULT_LOCALE} />
-      </Route>
-
-      <Route path={`/:lang(${appLocales.join('|')})`}>
         <MatchedLanguageComponent />
       </Route>
 
